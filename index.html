@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Project</title>
+  <script src="main.js"></script>
+	<link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://www.google.com/jsapi"></script>
+  <script>
+   google.load("visualization", "1", {packages:["corechart"]});
+   google.setOnLoadCallback(drawChart);
+   function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+     ['уровень знания', 'кол-во человек'],
+     ['Знают прс ИИ немного',     38],
+     ['Не знают об ИИ', 50],
+     ['Хорошо знакомы с этой темой',    3],
+     ['Остальные', 1]
+    ]);
+    var options = {
+     title: 'Результаты опроса    (ИИ - искусственный интеллект)',
+     is3D: true,
+     pieResidueSliceLabel: 'Остальное'
+    };
+    var chart = new google.visualization.PieChart(document.getElementById('air'));
+     chart.draw(data, options);
+   }
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=441728909510476&ev=PageView&noscript=1"
+  /></noscript> 
+  <link href='https://fonts.googleapis.com/css?family=Lusitana:400,700' rel='stylesheet' type='text/css'> 
+  <link rel="stylesheet" href="https://www.washingtonpost.com/brand-studio/wp-content/themes/brand-connect/dist/css/ibm-ai-timeline.min.css"> 
+  <noscript><iframe src="https://www.googletagmanager.com/gtm.js?id=GTM-WHNNX8B"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <link rel="stylesheet" href="https://www.washingtonpost.com/brand-studio/wp-content/themes/brand-connect/dist/css/fonts.min.css">
+  <link rel="stylesheet" href="https://www.washingtonpost.com/brand-studio/wp-content/themes/brand-connect/dist/css/navbar-v2.min.css">
+  <link rel="stylesheet" href="https://www.washingtonpost.com/brand-studio/wp-content/themes/brand-connect/css/washingtonpost-menu.css">
+  <script src="https://www.washingtonpost.com/brand-studio/wp-content/themes/brand-connect/dist/js/navbar-v2.min.js"></script>
+  <link rel="stylesheet" href="https://www.washingtonpost.com/brand-studio/wp-content/themes/brand-connect/dist/css/sponsor-bar.min.css"> 
+</head>
+<body>    
+	<header>
+      <img src="bgheader.jpg" alt="#" class="img">
+			<div class="logo">
+				<img src="logo.png" alt="#" class="logo">
+			</div>
+			<ul>
+				<li class="about" id="site"><a href="#">о сайте</a></li>
+				<li class="about" id="course"><a href="#">о курсе</a></li>				
+				<li class="about" id="us"><a href="#">о нас</a></li>
+				<li class="about" id="profile"><a href="#">профиль</a></li>
+			</ul>
+			<p class="header-text">Что такое нейронная сеть?</p>
+			<p class="start">начать</p>	
+		</div>	
+	</header>
+      <article class="speed">
+      <div class="wrapper">
+        <h3>AI's need for speed</h3>
+        <p>Artificial intelligence programs require fast hardware and infrastructure. Here's a look at the MIPS (million instructions per second) needed for certain tasks</p>
+        <div class="slider">
+          <ul class="slides">
+            <li class="mips zero">
+              <div class="ctr"></div>
+              <div class="abg animate">
+                <img src="https://www.washingtonpost.com/wp-stat/ad/public/static/brandconnect/ibm-ai-timeline/speed/mips1.png" alt="">
+              </div>
+            </li>
+          </ul>
+          <div class="info" data-slide="0">
+            <h6>1 MIPS</h6>
+            <p>Interpret simple images, such as geometric shapes, in real time</p>
+          </div>
+        </div>
+      </div>
+    </article>
+  <div class="about-site">
+    <div class="ex1" id="exid2"><div class="textabsm">Сайт</div></div>
+    <div id="air" style="width: 400px; height: 300px;"></div>
+    <div class="Blocktas"><div class="textabs">Искусственный интеллект (ИИ) позволяет компьютерам обучаться на собственном опыте, адаптироваться к задаваемым параметрам и выполнять те задачи, которые раньше были под силу только человеку. В большинстве случаев реализации ИИ — от компьютерных шахматистов до беспилотных автомобилей — крайне важна возможность глубокого обучения и обработки естественного языка. Благодаря этим технологиям компьютеры можно «научить» выполнять определенные задачи с помощью обработки большого объема данных и выявления в них закономерностей.</div>
+    </div>
+    <div class="Blocktas2"><div class="textabs2">Мы провели исследования и узнали, что большинство опрашиваемых не так хорошо осведомлены о нейронных сетях. 
+    В настоящее время растёт востребованность на специалистов IT-сферы, мы считаем, что наш проект поможет людям заинтересоваться машинным обучением. Из-за этих факторов мы создали сайт, на котором Вы можете найти историю возникновения ИИ, последние разработки в сфере машинного обучения и главное - КУРС ПО СОЗДАНИЮ СОБСТВЕННОЙ НЕЙРОСЕТИ!</div></div> 
+  </div>
+  <div class="about-course">  
+    <div class="ex1"  ><div class="textabcm">Курс "Нейронная сеть"</div></div>
+    <img src="https://www.kv.by/sites/default/files/pictures/mainimage/2018/08/a34i.432734250.jpg" class="img1" />
+    <div class="mid1"></div>
+    <div class="mid2"></div>
+    <div class="mid3"></div>
+    <div class="mid4"></div>
+    <div class="mid5"></div>
+    <div class="mid6"></div>
+    <div class="mid7" id="exid1"></div>
+    
+    <div class="Blocktac1"><div class="textabc1">Курс включает в себя несколько заданий, после которых Вы сможете запустить собственную нейросеть.</div></div>
+    <div class="img2"><img src="https://neuronus.com/images/news/2017_02/air_artificial-intelligence.jpg" class="img2"/></div>
+  </div>
+
+  
+  
+  <div class="LogLog" id="exid3"><div class="tekst">Регистрация / Вход</div><div class="pole1"><div class="textp1">Ваше имя</div></div><div class="pole2"><div class="textp2">Ваша эл. почта</div></div><div class="pole3"><div class="textp3">Ваш пароль</div></div><div class="logbot">Дальше</div></div>
+  <div class="bottom1"><div class="mails">Наша электронная почта: faizullinbigdanzix@gmail.com</div></div>
+  <div class="bottom2"><div class="tel">Наши телефоны: +79053108801</div></div>
+  <div class="bottom3"></div>
+  <div class="bottom35"></div>
+  <div class="bottom4"><div id="exid4">Контактная информация</div><div class="coninf"></div></div>
+<script type="text/javascript"> 
+     function slowScroll(id) { 
+         var offset = 0;
+         $('html, body').animate({ 
+              scrollTop: $(id).offset().top - offset 
+         }, 1000);
+         return false; 
+     } 
+</script>
+</body>
+</html>
